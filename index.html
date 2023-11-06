@@ -121,7 +121,7 @@
 	
     <!-- Write meta tags so that specified thumnbnail and descriptions appear on pasting the link -->
     <meta property="og:title" content="Discovering and Mitigating Biases in CLIP-based Image Editing">
-    <meta property="og:description" content="Research article by Md Mehrab Tanjim, Krishna Kumar Singh, Kushal Kafle, Ritwik Sinha, and Garisson W. Cottrell.">
+    <meta property="og:description" content="Research article by Md Mehrab Tanjim, Krishna Kumar Singh, Kushal Kafle, Ritwik Sinha, and Garrison W. Cottrell.">
     <meta property="og:image" content="./resources/teaser.png">
     <meta property="og:url" content="https://mehrab-tanjim.github.io/debiasing_clip_based_image_editing/index.html">
     <title>Text Visualness</title>
@@ -143,7 +143,7 @@
 	<center>
 		<span style="font-size:36px"><b>Discovering and Mitigating Biases in CLIP-based Image Editing</b></span><br>
 		<span style="font-size:25px">[<a href="./resources/paper.png"> Paper @ WACV2024 </a>]</span><br><br>
-		<span><a href="https://mehrab-tanjim.github.io/">Md Mehrab Tanjim<sup>1</sup></a>, <a href="https://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh<sup>1</sup></a>, <a href="https://research.adobe.com/person/chris-tensmeyer/">Kushal Kafle<sup>1</sup></a>, <a href="https://gujiuxiang.com/">Ritwik Sinha<sup>1</sup></a>, and <a href="https://www.linkedin.com/in/ani-nenkova-6223b9212">Garisson W. Cottrell<sup>2</sup></a></span><br><br>
+		<span><a href="https://mehrab-tanjim.github.io/">Md Mehrab Tanjim<sup>1</sup></a>, <a href="https://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh<sup>1</sup></a>, <a href="https://kushalkafle.com/">Kushal Kafle<sup>1</sup></a>, <a href="https://research.adobe.com/person/ritwik-sinha/">Ritwik Sinha<sup>1</sup></a>, and <a href="https://cseweb.ucsd.edu/~gary/">Garrison W. Cottrell<sup>2</sup></a></span><br><br>
 		<span><sup>1</sup>Adobe Research, <sup>2</sup>UCSD</span><br>
         <br><br>
 		<a href="https://research.adobe.com/"><img src="./index_files/adobe-logo.png" width="120px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cc.gatech.edu/"><img src="./index_files/ucsd.png" width="200px"></a><br><br>
@@ -158,7 +158,7 @@
 				<td width="260px">
 					<center>
 						<img class="round" style="width:700px" src="./index_files/teaser.png"><br><br>
-						Overview of the sentence visualness identification task, along with a motivating downstream application – image-to-text generation systems like DALL-E can be passively triggered for sentences identified as visual (in this example, the sentence about Tai chi), while skipping generation for non-visual text (the sentence about complaint). 
+						(coming soon)
 					</center>
 				</td>
 			</tr>
@@ -173,7 +173,7 @@
 		
 		<tbody><tr>
 			<td>
-				Visual text evokes an image in a person's mind, while non-visual text fails to do so. A method to automatically detect visualness in text will unlock the ability to augment text with relevant images, as neural text-to-image generation and retrieval models operate on the implicit assumption that the input text is visual in nature. We curate a dataset of 3,620 English sentences and their visualness scores provided by multiple human annotators. Additionally, we use documents that contain text and visual assets to create a distantly supervised corpus of document text and associated images.  We also propose a fine-tuning strategy that adapts large vision-language models like CLIP that assume a one-to-one correspondence between text and image to the task of scoring text visualness from text input alone. Our strategy involves modifying the model's contrastive learning objective to map text identified as non-visual to a common <em>NULL</em> image while matching visual text to their corresponding images in the document. We evaluate the proposed approach on its ability to <em>(i)</em> classify visual and non-visual text accurately, and <em>(ii)</em> attend over words that are identified as visual in psycholinguistic studies. Empirical evaluation indicates that our approach performs better than several heuristics and baseline models for the proposed task. Furthermore, to highlight the importance of modeling the visualness of text, we conduct qualitative analyses of text-to-image generation systems like DALL-E. 
+				(coming soon)
 			</td>
 		</tr>
 	</tbody></table>
@@ -182,13 +182,12 @@
 	<center><h1>Paper and Bibtex</h1></center><table align="center" width="1100px">
 		
 		<tbody><tr>
-			<td><a href="https://gaurav22verma.github.io/text-visualness/assets/TextVisualness.pdf"><img class="layered-paper-big" style="height:175px" src="./index_files/screenshot.png"></a></td>
+			<td><a href="https://mehrab-tanjim.github.io/debiasing_clip_based_image_editing/"><img class="layered-paper-big" style="height:175px" src="./index_files/teaser.png"></a></td>
 			<td><span style="font-size:14pt">
-				<b>Learning the Visualness of Text Using Large Vision-Language Models</b><br>
-				Gaurav Verma, Ryan A. Rossi, Christopher Tensmeyer, Jiuxiang Gu, Ani Nenkova<br>
-				<em>In Proceedings</em> of The 2023 Conference on Empirical Methods in Natural Language Processing. 2023.<br><br>
-				webpage: <a href="https://gaurav22verma.github.io/text-visualness/">https://gaurav22verma.github.io/text-visualness/</a><br>
-				arXiv: <a href="https://arxiv.org/abs/2305.10434">https://arxiv.org/abs/2305.10434</a><br><br><br>
+				<b>Discovering and Mitigating Biases in CLIP-based Image Editing</b><br>
+				Md Mehrab Tanjim, Krishna Kumar Singh, Kushal Kafle, Ritwik Sinha, Garrison W. Cottrell<br>
+				<em>In Proceedings</em> of The 2024 Conference on Winter Conference on Applications of Computer Vision. 2024.<br><br>
+				webpage: <a href="https://mehrab-tanjim.github.io/debiasing_clip_based_image_editing/">https://mehrab-tanjim.github.io/debiasing_clip_based_image_editing/</a><br><br>
 			</span></td>
 		</tr>
 	</tbody></table>
@@ -200,11 +199,11 @@
 				<span style="font-size: 14pt">Bibtex:</span><br><br>
 				<left>
 				<code>
-					<text style="color: red">@inproceedings</text>{verma2023textvisualness,<br>
-  					<text style="color: blue">title</text>={Learning the Visualness of Text Using Large Vision-Language Models},<br>
-  					<text style="color: blue">author</text>={Verma, Gaurav and Rossi, Ryan A and Tensmeyer, Christopher and Gu, Jiuxiang and Nenkova, Ani},<br>
-  					<text style="color: blue">booktitle</text>={The 2023 Conference on Empirical Methods in Natural Language Processing},<br>
-  					<text style="color: blue">year</text>={2023}<br>
+					<text style="color: red">@inproceedings</text>{(coming soon),<br>
+  					<text style="color: blue">title</text>={Discovering and Mitigating Biases in CLIP-based Image Editing},<br>
+  					<text style="color: blue">author</text>={Tanjim, Md Mehrab and Singh, Krishna Kumar and Kafle, Kushal and Sinha, Ritwik and Cottrell, Garrison W},<br>
+  					<text style="color: blue">booktitle</text>={The 2024 Conference on Winter Conference on Applications of Computer Vision},<br>
+  					<text style="color: blue">year</text>={2024}<br>
 				</code>
 			</left>
 			</span></td>
